@@ -1,0 +1,65 @@
+Chinese-New-Word 1.0
+=========================
+Version: 0.1
+
+README file updated on: 11-2013  
+
+This document is a summary of the project report and contains useful
+information for development purposes.
+
+By:          Dongyu Li(lidongyu1990@gmail.com). Xinya Wang().
+Instructor:  Chen Guang @BUPT.
+
+Table of Contents
+-----------------
+
+ 1. Project Overview
+ 2. Installation instructions
+ 3. User Guide
+ 4. Developer Guide
+ 5. References
+ 6. License
+ 7. Reporting bugs
+
+ 
+1. Project Overview
+-------------------
+
+The initial idea of the new word detection is inspired by Chinese 2012 COAE tasks, we find it is hard to detect new word in weibo using existing methods. So a new way of new-word-detection is needed. Here we use general suffix tree to solve this problem, which can efficently statistic the number of LCP (longest common phrase).
+
+
+2. Installation instructions
+-------------------
+
+Using a Visual Studio 2010 could help much in installation. if you are only for test and simply use. just download or clone it and open the solution file.
+
+
+3. User Guide
+-------------------
+
+using the project is simply and convenient. 
+   
+   1、in /output/ delete all files in this directory.
+   2、make sure your file is in GBK and use *.py(in /preprocess) to preprocess the file you want to find the new word. get the output file and name it as A
+   3、move A to /input directory
+   4、change the GST.cpp file, in line 264,change the input file to A
+   5、run and wait to see the output directory.
+   
+4. Developer Guide
+-------------------
+
+to be continue
+
+5. References
+-------------------
+   generalized suffix tree in java :https://github.com/neumannm/GeneralizedSuffixTree/tree/master/GeneralizedSuffixTree
+   
+   基于多特征的自适应新词识别  罗志勇 宋柔 
+   
+   
+6. License
+----------
+This library is free software; you can redistribute it and/or modify it
+
+
+
